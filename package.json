@@ -1,0 +1,47 @@
+{
+  "name": "pi-anymodel-provider",
+  "version": "0.1.0",
+  "description": "AnyModel provider, balance-token footer, and image generation for Pi",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "provider",
+    "anymodel",
+    "billing",
+    "footer",
+    "images"
+  ],
+  "license": "MIT",
+  "author": "TolyanL",
+  "homepage": "https://github.com/TolyanL/pi-anymodel-provider#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TolyanL/pi-anymodel-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TolyanL/pi-anymodel-provider/issues"
+  },
+  "files": [
+    "index.ts",
+    "billing.ts",
+    "catalog.ts",
+    "config.ts",
+    "footer.ts",
+    "media.ts",
+    "tests/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node tests/anymodel.test.mjs"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
